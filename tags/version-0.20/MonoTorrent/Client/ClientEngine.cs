@@ -252,6 +252,7 @@ namespace MonoTorrent.Client
                     Unregister(t);
                     t.Dispose();
                 }
+                this.diskManager.Dispose();
             }
 
             lock (asyncCompletionLock)
